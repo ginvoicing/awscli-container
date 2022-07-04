@@ -4,4 +4,5 @@ LABEL maintainer="Tarun Jangra<tarun.jangra@hotmail.com>"
 RUN apk update && \
     apk upgrade --available && \
     sync && \
-     python -m pip install awscli
+    apk add git && \
+    python -m pip install awscli
